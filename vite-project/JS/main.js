@@ -1,8 +1,8 @@
-import "../CSS/styles.css";
-import javascriptLogo from "./javascript.svg";
-import { Spokemon } from "../JS/pokemon.js";
+import './style.css'
+import javascriptLogo from './javascript.svg'
+import { setupCounter } from './counter.js'
 
-document.querySelector("#app").innerHTML = `
+document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -18,8 +18,6 @@ document.querySelector("#app").innerHTML = `
       Click on the Vite logo to learn more
     </p>
   </div>
-`;
+`
 
-setupCounter(document.querySelector("#counter"));
-
-Spokemon.forEach((pokemon) => console.log(pokemon.Name));
+setupCounter(document.querySelector('#counter'))
