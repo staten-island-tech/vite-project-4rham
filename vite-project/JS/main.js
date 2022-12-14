@@ -1,6 +1,6 @@
-import "./style.css";
+import "../CSS/styles.css";
 import javascriptLogo from "./javascript.svg";
-import { setupCounter } from "./counter.js";
+import { Spokemon } from "../JS/pokemon.js";
 
 document.querySelector("#app").innerHTML = `
   <div>
@@ -21,3 +21,5 @@ document.querySelector("#app").innerHTML = `
 `;
 
 setupCounter(document.querySelector("#counter"));
+
+Spokemon.forEach((pokemon) => console.log(pokemon.Name));
