@@ -58,7 +58,7 @@ const spokemon = [
     Image: `https://archives.bulbagarden.net/media/upload/8/8c/Menu_SV_Sandy_Shocks.png`,
   },
 ];
-export const Vpokemon = [
+export const vpokemon = [
   {
     Name: "Miraidon",
     OG: "Cyclizar",
@@ -117,4 +117,4 @@ export const Vpokemon = [
   },
 ];
 
-export {spokemon}
+export { spokemon };
