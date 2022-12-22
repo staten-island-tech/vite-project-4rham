@@ -1,4 +1,5 @@
-export const Spokemon = [
+//@ -1,117 +0,0 @@
+const spokemon = [
   {
     Name: "Koraidon",
     OG: "Cyclizar",
@@ -115,3 +116,5 @@ export const Vpokemon = [
     Image: `https://archives.bulbagarden.net/media/upload/1/1a/Menu_SV_Iron_Thorns.png`,
   },
 ];
+
+export {spokemon}
