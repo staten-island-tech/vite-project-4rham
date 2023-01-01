@@ -5,7 +5,7 @@ body,
   margin: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-  background-color: #ff6e58;
+  background-color: var(--primary);
   color: rgb(0, 0, 0);
 }
 h1{
@@ -21,4 +21,23 @@ h1{
   text-align: center;
   text-decoration: none;
   display: block;
+}
+
+:root{
+  --violet: #7F00FF;
+  --scarlet: #ff2400;
+  --light_violet: #ca95ff;
+  --light_scarlet: hsl(8, 100%, 70%);
+  --primary: var(--light_violet);
+  --secondary: var(--violet);
+}
+
+.violet {
+  --primary: var(--light_violet);
+  --secondary: var(--violet);
+}
+
+.scarlet {
+  --primary: var(--light_scarlet);
+  --secondary: var(--scarlet);
 }
