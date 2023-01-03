@@ -41,3 +41,28 @@ h1{
   --primary: var(--light_scarlet);
   --secondary: var(--scarlet);
 }
+
+.display {
+  background-color: var(--secondary);
+  text-align: center;
+  display: block;
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  border-radius: 2px;
+  margin-bottom: 100px;
+  font-size: 2rem;
+  margin-left: 42.5%;
+  
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex: 2;
+}
+
+.image {
+  margin-top: 5px;
+}

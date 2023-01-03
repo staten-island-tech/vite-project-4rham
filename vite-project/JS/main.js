@@ -28,6 +28,52 @@ function displayCards() {
 }
 displayCards();
 
-document.querySelector("#app").innerHTML = `<h1> P4R4D0X P0K3M0N </h1>`;
+const scarletPokemon = pokemon.filter((Version) => Version.Version === "Scarlet");
 
-document.querySelector("#")
+document.querySelector("#sb").addEventListener("click", function () {
+    document.querySelectorAll(".display").forEach((e) => e.remove());
+    scarletPokemon.forEach((scarletPokemon) => {
+        document.querySelector (".cards").insertAdjacentHTML("afterbegin",
+        `<div class = "display">
+        <h2 id = "name"> ${pokemon.Name} </h2>
+        <h3 id = "number"> ${pokemon.Number} </h3>
+        <img class = "image" src = "${pokemon.Image}"/>
+        <h4 id = "Typing"> ${pokemon.Type} </h4>
+        <h5 id = "Original"> ${pokemon.OG} </h5>
+        </div>`
+        );
+    })
+})
+
+const violetPokemon = pokemon.filter((Version) => Version.Version === "Violet");
+
+document.querySelector("#vb").addEventListener("click", function () {
+    document.querySelectorAll(".display").forEach((e) => e.remove());
+    violetPokemon.forEach((violetPokemon) => {
+        document.querySelector (".cards").insertAdjacentHTML("afterbegin",
+        `<div class = "display">
+        <h2 id = "name"> ${pokemon.Name} </h2>
+        <h3 id = "number"> ${pokemon.Number} </h3>
+        <img class = "image" src = "${pokemon.Image}"/>
+        <h4 id = "Typing"> ${pokemon.Type} </h4>
+        <h5 id = "Original"> ${pokemon.OG} </h5>
+        </div>`
+        );
+    })
+})
+
+const sortedPokemon = pokemon 
+
+document.querySelector("#db").addEventListener("click", function () {
+
+})
+
+document.querySelector("#rb").addEventListener("click", function () {
+    document.querySelectorAll(".display").forEach((e) => e.remove());
+    displayCards();
+});
+
+document.querySelector("#db").addEventListener("click", function () {
+    document.querySelectorAll(".display").forEach((e) => e.remove());
+    displayCards();
+});
